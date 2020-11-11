@@ -13,3 +13,5 @@ for remote redis:
 ```sh
 redis-cli -u redis://<ip>:<port>
 ```
+
+For AWS FARGATE deploy redis:latest as container definition [See](https://hub.docker.com/_/redis?tab=tags)
