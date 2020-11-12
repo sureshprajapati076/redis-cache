@@ -1,0 +1,14 @@
+server:
+  port: 2020
+spring:
+  application:
+    name: apigateway
+  data:
+    mongodb:
+      host: localhost
+      database: eshopping
+  redis:
+    host: localhost
+    port: 6379
+jwt:
+  secret: MY-Secret-Key

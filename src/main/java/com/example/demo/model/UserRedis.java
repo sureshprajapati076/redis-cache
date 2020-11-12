@@ -1,23 +1,22 @@
-package com.example.demo;
+package com.example.demo.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;
 
 import java.io.Serializable;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
-@RedisHash("Student")
-public class Person implements Serializable {
+@RedisHash("users")
+public class UserRedis implements Serializable {
     @Id
     private String email;
     private Set<String> jwts=new HashSet<>();
 
-    public Person() {
+    public UserRedis() {
     }
 
-    public Person(String email) {
+    public UserRedis(String email) {
         this.email = email;
     }
 

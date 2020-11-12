@@ -1,7 +1,5 @@
-
-FROM openjdk:8-jdk-alpine
-VOLUME /tmp
-EXPOSE 8090
-ADD target/*.jar app.jar
-ENV JAVA_OPTS=""
-ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /app.jar" ]
+FROM openjdk:8-jre-alpine
+ADD /target/*.jar /app.jar
+EXPOSE 2020
+ENV SPRING_PROFILES_ACTIVE="", JAVA_OPTS=""
+CMD ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar","--spring.profiles.active=${SPRING_PROFILES_ACTIVE}"]
