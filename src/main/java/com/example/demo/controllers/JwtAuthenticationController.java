@@ -39,8 +39,27 @@ public class JwtAuthenticationController {
 	@Autowired
 	UserRepository userService;
 
-//	@Autowired
-//	BlackListTokenService blackListTokenService;
+
+	/* Using Constructor based DI (Remove above statements and un comment this block)
+	
+    private UserRedisRepository userRedisRepository;
+    private AuthenticationManager authenticationManager;
+    private JwtTokenUtil jwtTokenUtil;
+    private JwtUserDetailsService userDetailsService;
+    private UserRepository userService;
+
+
+    public JwtAuthenticationController(UserRedisRepository userRedisRepository, AuthenticationManager authenticationManager, JwtTokenUtil jwtTokenUtil, JwtUserDetailsService userDetailsService, UserRepository userService) {
+        this.userRedisRepository = userRedisRepository;
+        this.authenticationManager = authenticationManager;
+        this.jwtTokenUtil = jwtTokenUtil;
+        this.userDetailsService = userDetailsService;
+        this.userService = userService;
+    }
+    */
+	
+	
+	
 
 	@RequestMapping(value = "/signin", method = RequestMethod.POST)
 	public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtRequest authenticationRequest) throws Exception {
