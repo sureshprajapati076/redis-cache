@@ -5,7 +5,7 @@ spring:
     name: apigateway
   data:
     mongodb:
-      uri: mongodb://mongouser:mongopass@mycluster076-shard-00-00-duylq.mongodb.net:27017,mycluster076-shard-00-01-duylq.mongodb.net:27017,mycluster076-shard-00-02-duylq.mongodb.net:27017/test?ssl=true&replicaSet=MyCluster076-shard-0&authSource=admin&retryWrites=true&w=majority
+      uri: URL TO MONGODB
       database: eshopping
   redis:
     host: redis-demo.lbbdc0.0001.use1.cache.amazonaws.com
