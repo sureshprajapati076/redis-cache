@@ -1,6 +1,6 @@
 # redis-cache
 
-[Youtube Video Linke](https://www.youtube.com/watch?v=tmjAA4cNDxE)
+[Youtube Video Link](https://www.youtube.com/watch?v=tmjAA4cNDxE)
 
 start redis server using **brew services start redis**
 
