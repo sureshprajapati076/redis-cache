@@ -12,7 +12,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @SpringBootApplication
 @EnableWebSecurity
-@EnableCaching
 @EnableRedisRepositories
 public class SecuredGateWayApplication {
 	
